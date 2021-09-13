@@ -1,0 +1,88 @@
+        .wrap {
+            width: 200px;
+            height: 200px;
+            margin: 200px;
+            position: relative;
+        }
+ 
+        .cube {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            transform: rotateX(-30deg) rotateY(-80deg);
+            animation: rotate linear 20s infinite;
+        }
+ 
+        @-webkit-keyframes rotate {
+            from {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            to {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+ 
+        .cube div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            opacity: 0.8;
+            transition: all .4s;
+        }
+ 
+        .pic {
+            width: 200px;
+            height: 200px;
+        }
+ 
+        .cube .out_front {
+            transform: rotateY(0deg) translateZ(100px);
+        }
+ 
+        .cube .out_back {
+            transform: translateZ(-100px) rotateY(180deg);
+        }
+ 
+        .cube .out_left {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+ 
+        .cube .out_right {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+ 
+        .cube .out_top {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+ 
+        .cube .out_bottom {
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+ 
+        .cube:hover .out_front {
+            transform: rotateY(0deg) translateZ(200px);
+        }
+ 
+        .cube:hover .out_back {
+            transform: translateZ(-200px) rotateY(180deg);
+        }
+ 
+        .cube:hover .out_left {
+            transform: rotateY(-90deg) translateZ(200px);
+        }
+ 
+        .cube:hover .out_right {
+            transform: rotateY(90deg) translateZ(200px);
+        }
+ 
+        .cube:hover .out_top {
+            transform: rotateX(90deg) translateZ(200px);
+        }
+ 
+        .cube:hover .out_bottom {
+            transform: rotateX(-90deg) translateZ(200px);
+        }
+
+
+ 

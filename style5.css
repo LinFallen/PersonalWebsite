@@ -1,0 +1,40 @@
+.door {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+button {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-family: 'MuseoModerno', cursive;
+	font-size: 20px;
+	color: black;
+	background: rgba(254, 255, 253, 0.8);
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+button::before {
+	content: '';
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: 1s;
+}
+
+button:hover {
+	color: white;
+	animation: shift 1s forwards linear;
+}
+
+@keyframes shift {
+	50%{background: black}
+	100%{border: 2px solid white;
+	background: black;}
+}

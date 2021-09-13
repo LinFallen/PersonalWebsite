@@ -1,0 +1,152 @@
+*{margin:0px;padding:0px}
+
+
+body{
+	background-image: url(images/cool-background.png);
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	text-align: center;
+    color: #333333;
+}
+
+
+header{
+    width: 900px;
+    height: 130px;
+    padding-top: 0px;
+    margin: 0px auto;
+    }
+
+
+header h1 {
+    float:left;
+    padding-top:60px;
+    padding-left:20px;
+    }
+
+
+.orange{
+    color:#e67e1f;
+    }
+
+
+nav{
+    margin:0px auto;
+    width:900px;
+    clear:both;
+    }
+
+
+nav ul{
+    list-style:none;
+    }
+
+
+nav ul li{
+    text-align:center;
+    float:left;
+    padding-left:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    width:150px;
+    }
+
+
+nav ul li a{
+    display:block;
+    background-color:#aa5500;
+    border-right:1px solid #fff;
+    line-height:2.5em;
+    margin-right:0px;
+    padding:8px 14px 8px 14px;
+    color: #ecf9ff;
+    font-size: 0.8em;
+    text-decoration: none;
+    }
+
+
+nav ul li .selected{
+    color: #ecf9ff;
+    background-color:#e69109;
+    }
+aside{
+    float:left;
+    list-style:none;
+    margin-left:10px;
+	margin-top: 45px;
+    }
+
+
+aside ul{
+    list-style:none;
+    margin-bottom:20px;
+    margin-top:100px;
+    margin-left:0px;
+    }
+
+
+aside li{
+    text-align:left;
+    padding-left:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    border-bottom:1px solid #eaeada;
+    }
+
+
+
+
+aside ul li a{ 
+    display:block;
+    background-color:#ffffff;
+    margin-right:0px;
+    padding-top:6px;
+    padding-bottom:6px;
+    padding-left:22px;
+    color: #666666;
+    font-size: 0.8em;
+    text-decoration: none;
+    width:165px;
+    }
+
+
+aside  li a:hover{
+    color: #37210c;
+    background-color:#f7f7f2;
+    }
+
+aside .selected{
+    color: #37210c;
+    background-color:#d5d7db;
+    }
+	
+	
+#content{
+    margin:0 auto;
+    width:902px;
+    background-color:#dfeef9;
+    height:480px;
+    clear:both;
+    }
+
+
+section{
+    float:left;
+    width:75%;
+	height:92%;
+    margin-right:0px;
+    margin-top:15px;
+    background-color:#FFF;
+    text-align:left;
+    font-size:0.9em;
+    padding:5px;
+	}
+
+
+section p{ 
+    font-size:0.9em;
+    color: #000000;
+    padding:10px;
+    text-align:left;
+    }
